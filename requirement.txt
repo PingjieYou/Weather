@@ -1,0 +1,9 @@
+torch
+scikit-learn
+pyecharts
+matplotlib
+pandas
+numpy
+requests
+tqdm
+bs4
