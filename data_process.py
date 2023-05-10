@@ -1,5 +1,3 @@
-import utils
-import numpy as np
 
 index2name = {0: 'times', 1: 'city', 2: 'date', 3: 'date_', 4: 'aqi', 5: 'aqi_rank', 6: 'pm25', 7: 'pm10',
               8: 'so2', 9: 'no2', 10: 'co', 11: 'o3', 12: 'situation', 13: 'wind', 14: 'temp'}

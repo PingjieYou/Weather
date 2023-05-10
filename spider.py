@@ -2,7 +2,6 @@ from audioop import reverse
 from email import header
 import os
 import numpy as np
-from symbol import parameters
 import pandas as pd
 from utils import url2soup
 
@@ -120,7 +119,7 @@ for i, (city_item, city_lish_item) in enumerate(zip(url_aqi_chongqing, url_lish_
     # 只遍历三个城市
     # if i == 1:
     #     break
-np.savetxt("./src/aqi_url" + str(start_index) +
+np.savetxt("./csv/aqi_url" + str(start_index) +
            ".txt", np.array(aqi_list), fmt="%s")
-np.savetxt("./src/weather_url" + str(start_index) + ".txt",
+np.savetxt("./csv/weather_url" + str(start_index) + ".txt",
            np.array(lish_list), fmt="%s")

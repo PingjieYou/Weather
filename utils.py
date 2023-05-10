@@ -117,8 +117,8 @@ def parse_url(aqi_url, lish_url, save_path, db=None, url_header="http://www.tian
                 suituaion = td_all[1].text.strip().replace(" ", "")
                 tem = td_all[2].text.strip()
                 wind = td_all[3].text.strip()
-                append2csv('./src/chongqing.csv', [city, date, date_, quality, aqi, aqi_rank,
-                                                   pm25, pm10, so2, no2, co, o3, suituaion, wind, tem, index])
+                append2csv('csv/chongqing.csv', [city, date, date_, quality, aqi, aqi_rank,
+                                                 pm25, pm10, so2, no2, co, o3, suituaion, wind, tem, index])
                 if db != None:
                     insert2mysql(db=db, data=[(city), (date), (date_), (quality), (aqi), (aqi_rank),
                                               (pm25), (pm10), (so2), (no2), (co), (o3), (suituaion), (wind), (tem), (index)])
